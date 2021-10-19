@@ -1,0 +1,157 @@
+
+        body{
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+        }
+        #bar{
+            background-color: rgb(39, 39, 38);
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+            border: 3px solid rgb(39, 39, 38);
+        }
+
+        #bar ul{
+            color: rgba(255,255,255,0.7);
+        }
+        #bar li{
+            display: inline-block;
+            margin: 1rem;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.3rem;
+
+            position: relative;
+            left: 5%;
+        }
+
+        #bar li:hover{
+            background-color: rgb(187, 86, 75);
+        }
+     
+        #propile img{
+            width: 13rem;
+            background-color: rgba(255,255,255,0.15);
+        }
+        #propile img:hover{
+            background-color: rgba(255,255,255,0.3);
+        }
+
+       
+
+        header{
+            margin: 2rem ;
+            text-align: center;
+            color: rgba(255,255,255,0.5);
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 100;
+        }
+        header #sitename{
+            font-size: 2rem;
+        }
+        header #sitename h1 strong{
+            font-weight: 600;
+            color: white;
+        }
+
+        #slogun h1{
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.8);
+            font-weight: 200;
+            line-height: 120%;
+        }
+
+        header img{
+            border-radius: 100%;
+            padding: 0.3rem;
+            border: 1px dotted rgba(255,255,255,0.5);
+        }
+        header>div{
+            margin: 2rem;
+        }
+
+        #snslogo ul li{
+            display: inline-block;
+        }
+        #snslogo ul a{
+            width: 1.5rem;
+            height: 1.5rem;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 100%;
+            margin: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #snslogo ul li label{
+            display: none;
+        }
+        #snslogo ul a:hover{
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        #section{
+            display: flex;
+            gap:1rem;
+        }
+        #section figure{
+            margin-bottom: 2rem;
+        }
+        #section figure:hover{
+            box-shadow: 0 0 1rem rgba(255,255,255,0.8);
+        }
+
+        #section figcaption{
+            padding: 0.8rem;
+            background-color: rgba(255,255,255,0.2);
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            border-left: 1px solid rgba(255,255,255,0.5);
+            border-right: 1px solid rgba(255,255,255,0.5);
+            border-bottom-left-radius: 0.2rem;
+            border-bottom-right-radius: 0.2rem;
+        }
+        #section>div{
+            flex-grow: 2;
+        }
+        #section img{
+            width: 100%;
+            border-top-left-radius: 0.2rem;
+            border-top-right-radius: 0.2rem;
+        }
+
+        #wrapper{
+            width: 90%;
+            margin: 4rem auto;
+         
+        }
+
+        footer{
+            color: rgba(255,255,255,0.7);
+            margin: 2rem;
+            text-align: center;
+            padding-bottom: 4rem;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        footer::before{
+            content: '';
+            border-top:1px solid rgba(255,255,255,0.7) ;
+            width: 10rem;
+            display: block;
+            padding-bottom: 4rem;
+            margin: 0 auto;
+            
+        }
+
+        @media(max-width:500px){
+            #section{
+                display: block;
+            }
+            #bar li{
+                display:block;
+                position:relative;
+                left: auto;
+            }
+        }
